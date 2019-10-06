@@ -1,11 +1,35 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <title>Productivity</title>
 </head>
 <body>
 <h1>Simple idea</h1>
 
+<p>
+  tldr; Invest now to do more tomorrow or do more today.
+  You can invest time in becoming more productive now or instead use that time to perform work.
+  Lets use a simple model to explore this trade-off.
+  You have a base productivity \(w_0\). You can invest \(C_p\) today to be \(p_r\) more productive tomorrow.
+  mathematically:
+  \[ w_{t+1} = w_t.(1 + p_r) \]
+  or
+  \[ w_{t+1} = w_0.(1 + p_r)^t \]
+
+  so over period t the amount of work done is:
+
+  \[ TW_{t} = \sum_{j=0}^{j=t}w_0.(1 + p_r)^j - C_p.t \]
+
+  the term \(C_p.t\) represents the investment in time to get a productivity increase p_r in the next period.
+
+  Lets visualize how these values evolve over time:
+
+  <h3>TBD</h3>
+
+</p>
 </body>
 </html>
